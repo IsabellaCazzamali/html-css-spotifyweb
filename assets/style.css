@@ -27,9 +27,121 @@ img{
 
 /* #region Utilities */
 
+.d-flex{
+    display: flex;
+}
+
 /* #endregion Utilities */
 
 /* #region Debug */
 
+.debug .sidebar{
+    height: 90vh;
+    background-color: rgb(221, 74, 229);
+}
+
+.debug .header{
+    height: 10vh;
+    background-color: rgb(55, 108, 136);
+}
+
+.debug .main{
+    background-color: rgb(62, 62, 202);
+}
+
+.debug .toolbar{
+    background-color: rgb(162, 235, 53);
+}
+
 /* #endregion Debug */
 
+/* #region Cntainer */
+
+/* #endregion Container */
+
+/* #region Sidebar */
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 180px;
+}
+
+@media screen and (max-width: 879px){
+    .sidebar{
+        width: 150px;
+    } 
+}
+
+@media screen and (max-width: 320px){
+    .sidebar{
+        width: 50px;
+    } 
+}
+
+/* #endregion Sidebar */
+
+/* #region Main */
+.main{
+    margin-left: 180px;
+    margin-bottom: 100px;
+    width: calc(100% - 180px);
+    height: 90vh;
+}
+
+@media screen and (max-width: 879px){
+    .main{
+        width: calc(100% - 150px);
+        margin-left: 150px;
+    } 
+}
+
+@media screen and (max-width: 320px){
+    .main{
+        width: calc(100% - 50px);
+        margin-left: 50px;
+    } 
+}
+
+@media screen and (max-height: 700px){
+    .main{
+        height: calc(100vh - 15vh);
+    } 
+}
+
+@media screen and (max-height: 170px){
+    .main{
+        height: calc(100vh - 45vh);
+    } 
+}
+/* #end region Main */
+
+/* #region Header */
+.header{
+
+}
+
+
+/* #endregion Header */
+
+/* #region Toolbar */
+.toolbar{
+    position: fixed;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+}
+
+@media screen and (max-height: 700px){
+    .toolbar{
+        height: 15vh;
+    } 
+}
+
+@media screen and (max-height: 170px){
+    .toolbar{
+        height: 45vh;
+    } 
+}
+/* #endregion Toolbar */
