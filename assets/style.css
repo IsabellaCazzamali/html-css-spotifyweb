@@ -1,0 +1,35 @@
+/* #region Common */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+:root{
+    --spotify-dark: rgb(8,11,18);
+    --spotify-black: rgb(0,0,0);
+    --spotify-primary: rgb(20,25,34);
+    --spotify-white: rgb(255,255,255);
+    --spotify-toolbar: rgb(40,40,40);
+    --spotify-midgrey: rgb(20,25,34);
+    --spotify-darkgrey: rgb(122,124,129);
+    --spotify-lightgrey: rgb(210,210,210);
+    --spotify-green: rgb(173,255,47);
+}
+
+/* #endregion Common */
+
+/* #region Utilities */
+
+/* #endregion Utilities */
+
+/* #region Debug */
+
+/* #endregion Debug */
+
