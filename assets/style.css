@@ -36,12 +36,10 @@ img{
 /* #region Debug */
 
 .debug .sidebar{
-    height: 90vh;
     background-color: rgb(221, 74, 229);
 }
 
 .debug .header{
-    height: 10vh;
     background-color: rgb(55, 108, 136);
 }
 
@@ -55,7 +53,7 @@ img{
 
 /* #endregion Debug */
 
-/* #region Cntainer */
+/* #region Container */
 
 /* #endregion Container */
 
@@ -66,6 +64,7 @@ img{
     left: 0;
     top: 0;
     width: 180px;
+    height: calc(100vh - 90px);
 }
 
 @media screen and (max-width: 879px){
@@ -77,6 +76,18 @@ img{
 @media screen and (max-width: 320px){
     .sidebar{
         width: 50px;
+    } 
+}
+
+@media screen and (max-height: 700px){
+    .sidebar{
+        height: calc(100vh - 70px);
+    } 
+}
+
+@media screen and (max-height: 170px){
+    .sidebar{
+        height: calc(100vh - 70px);
     } 
 }
 
@@ -106,20 +117,32 @@ img{
 
 @media screen and (max-height: 700px){
     .main{
-        height: calc(100vh - 15vh);
+        height: calc(100vh - 50px);
     } 
 }
 
 @media screen and (max-height: 170px){
     .main{
-        height: calc(100vh - 45vh);
+        height: calc(100vh - 40px);
     } 
 }
 /* #end region Main */
 
 /* #region Header */
 .header{
+    height: 90px;
+}
 
+@media screen and (max-height: 600px){
+    .header{
+        height: 70px;
+    } 
+}
+
+@media screen and (max-height: 170px){
+    .header{
+        height: 70px;
+    } 
 }
 
 
@@ -129,19 +152,19 @@ img{
 .toolbar{
     position: fixed;
     bottom: 0;
-    height: 10vh;
+    height: 90px;
     width: 100%;
 }
 
-@media screen and (max-height: 700px){
+@media screen and (max-height: 600px){
     .toolbar{
-        height: 15vh;
+        height: 70px;
     } 
 }
 
 @media screen and (max-height: 170px){
     .toolbar{
-        height: 45vh;
+        height: 70px;
     } 
 }
 /* #endregion Toolbar */
