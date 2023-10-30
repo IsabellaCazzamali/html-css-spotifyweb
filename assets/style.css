@@ -64,21 +64,33 @@ img{
     position: fixed;
     left: 0;
     top: 0;
-    width: 180px;
-    height: calc(100vh - 90px);
+    width: 150px;
+    height: calc(100vh - 70px);
 }
 
-@media screen and (max-width: 879px){
-    .sidebar{
-        width: 150px;
-    } 
+.sidebar .logo{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
 }
 
 @media screen and (max-width: 320px){
     .sidebar{
         width: 50px;
     } 
+    .sidebar .logo img{
+        visibility: hidden;
+    }
+
+    .sidebar .logo {
+        background-image: url('./img/logo-small.svg');
+        background-repeat: no-repeat;
+        background-size: 30px;
+        margin: 10px;
+    }
 }
+
 
 @media screen and (max-height: 700px){
     .sidebar{
@@ -92,22 +104,18 @@ img{
     } 
 }
 
+
+
+
 /* #endregion Sidebar */
 
 /* #region Main */
 .main{
     background-color: var(--spotify-primary);
-    margin-left: 180px;
+    margin-left: 150px;
     margin-bottom: 100px;
-    width: calc(100% - 180px);
-    height: 90vh;
-}
-
-@media screen and (max-width: 879px){
-    .main{
-        width: calc(100% - 150px);
-        margin-left: 150px;
-    } 
+    width: calc(100% - 150px);
+    height: calc(100vh - 70px);
 }
 
 @media screen and (max-width: 320px){
@@ -117,7 +125,7 @@ img{
     } 
 }
 
-@media screen and (max-height: 700px){
+/* @media screen and (max-height: 700px){
     .main{
         height: calc(100vh - 50px);
     } 
@@ -127,16 +135,16 @@ img{
     .main{
         height: calc(100vh - 40px);
     } 
-}
-/* #end region Main */
+} */
+/* #endregion Main */
 
 /* #region Header */
 .header{
     background-color: var(--spotify-dark);
-    height: 90px;
+    height: 70px;
 }
 
-@media screen and (max-height: 600px){
+/* @media screen and (max-height: 600px){
     .header{
         height: 70px;
     } 
@@ -146,7 +154,7 @@ img{
     .header{
         height: 70px;
     } 
-}
+} */
 
 
 /* #endregion Header */
@@ -156,11 +164,11 @@ img{
     background-color: var(--spotify-toolbar);
     position: fixed;
     bottom: 0;
-    height: 90px;
+    height: 70px;
     width: 100%;
 }
 
-@media screen and (max-height: 600px){
+/* @media screen and (max-height: 600px){
     .toolbar{
         height: 70px;
     } 
@@ -170,5 +178,5 @@ img{
     .toolbar{
         height: 70px;
     } 
-}
+} */
 /* #endregion Toolbar */
