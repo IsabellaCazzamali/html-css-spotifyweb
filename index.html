@@ -11,13 +11,94 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="">
     
 
-    <div class="sidebar">
+    <div class="sidebar d-flex flex-direction-column">
         <div class="logo">
-            <img src="./assets/img/logo.svg" alt="">
+            <img src="./assets/img/logo.svg" alt="logo Spotify">
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="d-flex">
+                    <div class="green-line-y"></div>
+                    <div class="icon home">
+                        <img src="./assets/img/home.svg" alt="home icon">
+                    </div>
+                    <div class="icon-text">
+                        Home
+                    </div>
+                </li>
+                <li class="d-flex">
+                    <div class="icon search">
+                        <img src="./assets/img/search.svg" alt="search icon">
+                    </div>
+                    <div class="icon-text">
+                        Cerca
+                    </div>
+                </li>
+                <li class="d-flex">
+                    <div class="icon library">
+                        <img src="./assets/img/libreria.svg" alt="library icon">
+                    </div>
+                    <div class="icon-text">
+                        La tua libreria
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="playlists">
+            <h5>
+                Playlist
+            </h5>
+            <ul>
+                <li class="create-playlist d-flex align-items-center">
+                    <i class="fa-sharp fa-solid fa-square-plus fa-2xl" style="color: #a3a3a3;"></i>
+                    <div class="create-playlist-text">Crea Playlist</div>
+                </li>
+                <li class="playlist">
+                    Nome Playlist
+                </li>
+                <li class="playlist">
+                    Nome Playlist
+                </li>
+                <li class="playlist">
+                    Nome Playlist
+                </li>
+                <li class="playlist">
+                    Nome Playlist
+                </li>
+                <li class="playlist">
+                    Nome Playlist
+                </li>
+                <li class="playlist">
+                    Nome Playlist
+                </li>
+                <li class="playlist">
+                    Nome Playlist
+                </li>
+                <li class="playlist">
+                    Nome Playlist
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-sidebar d-flex flex-direction-column">
+            <div class="install d-flex align-items-center">
+                <img src="./assets/img/download.svg" alt="donwload symbol">
+                <div class="install-text">
+                    Installa app
+                </div>
+            </div>
+            <div class="profile d-flex align-items-center">
+                <div class="profile-icon">
+                    <img src="./assets/img/profile.svg" alt="Profile icon">
+                </div>
+                <div class="profile-text">
+                    John Doe
+                </div>
+            </div>
         </div>
     </div>
 
