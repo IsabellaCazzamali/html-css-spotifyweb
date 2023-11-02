@@ -44,9 +44,19 @@ a{
     align-items: center;
 }
 
+.justify-content-center{
+    justify-content: center;
+}
+
 .flex-direction-column{
     flex-direction: column;
 }
+
+.gap-4{
+    gap: 1rem;
+}
+
+
 
 /* #endregion Utilities */
 
@@ -325,6 +335,34 @@ li .icon-text{
 
 
 /* #endregion Header */
+
+/* #region Navbar */
+
+.navbar{
+    margin-top: 5px;
+}
+
+.navbar a{
+    color: var(--spotify-bar-grey);
+    text-transform: uppercase;
+    font-size: 8px;
+    font-weight: 700;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.green-line-x{
+    width: 20px;
+    border-bottom: 1.5px solid var(--spotify-green);
+    margin-left: 10px;
+    /* visibility: hidden; */
+}
+
+.navbar a:hover{
+    /* visibility: visible; */
+}
+
+/* #endregion Navbar */
 
 /* #region Toolbar */
 .toolbar{
