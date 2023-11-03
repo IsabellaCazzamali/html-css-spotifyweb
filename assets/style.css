@@ -48,12 +48,20 @@ a{
     justify-content: center;
 }
 
+.justify-start{
+    justify-content: start;
+}
+
 .flex-direction-column{
     flex-direction: column;
 }
 
 .gap-4{
     gap: 1rem;
+}
+
+.gap-12{
+    gap: 3rem;
 }
 
 
@@ -76,6 +84,12 @@ a{
 
 .debug .toolbar{
     background-color: rgb(162, 235, 53);
+}
+
+.debug .card{
+    background-color: yellow;
+    height: 150px;
+    aspect-ratio: 1 / 1;
 }
 
 /* #endregion Debug */
@@ -276,6 +290,38 @@ li .icon-text{
     height: calc(100vh - 70px);
 }
 
+.main h3{
+    color: var(--spotify-white);
+    margin-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.card{
+    height: 150px;
+    aspect-ratio: 1 / 1;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+
+.card .playlist-name{
+    font-size: 11px;
+    color: var(--spotify-white);
+    font-weight: 700;
+    font-weight: bold;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.card .playlist-subtitle{
+    font-size: 8px;
+    color: var(--spotify-bar-grey);
+    font-weight: 700;
+    font-weight: bold;
+    padding-top: 5px;
+    text-align: center;
+}
+
 @media screen and (max-width: 320px){
     .main{
         width: calc(100% - 50px);
@@ -340,6 +386,7 @@ li .icon-text{
 
 .navbar{
     margin-top: 5px;
+    padding-bottom: 20px;
 }
 
 .navbar a{
