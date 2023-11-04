@@ -25,7 +25,7 @@ img{
 }
 
 ul {
-list-style: none;
+    list-style: none;
 }
 
 a{
@@ -106,7 +106,7 @@ a{
     left: 0;
     top: 0;
     width: 150px;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 60px);
     overflow-y: auto;
 }
 
@@ -266,13 +266,13 @@ li .icon-text{
 
 @media screen and (max-height: 700px){
     .sidebar{
-        height: calc(100vh - 70px);
+        height: calc(100vh - 60px);
     } 
 }
 
 @media screen and (max-height: 170px){
     .sidebar{
-        height: calc(100vh - 70px);
+        height: calc(100vh - 60px);
     } 
 }
 
@@ -284,10 +284,19 @@ li .icon-text{
 /* #region Main */
 .main{
     background-color: var(--spotify-primary);
-    margin-left: 150px;
-    margin-bottom: 100px;
+    padding-left: 150px;
+/*     margin-bottom: 100px;
     width: calc(100% - 150px);
-    height: calc(100vh - 70px);
+    height: calc(100vh - 70px); */
+}
+
+.created-for{
+    padding-top: 100px;
+}
+
+.popular-artists{
+    padding-top: 50px;
+    padding-bottom: 120px;
 }
 
 .main h3{
@@ -322,10 +331,39 @@ li .icon-text{
     text-align: center;
 }
 
+.subtitle-suggestions{
+    font-size: 8px;
+    color: var(--spotify-bar-grey);
+    font-weight: 700;
+    font-weight: bold;
+    margin-left: 15px;
+    padding-bottom: 14px;
+}
+
+.round-card{
+    height: 150px;
+    aspect-ratio: 1 / 1;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+
+.round-card img{
+    border-radius: 50%;
+}
+
+.round-card .playlist-name{
+    font-size: 11px;
+    color: var(--spotify-white);
+    font-weight: 700;
+    font-weight: bold;
+    padding-top: 5px;
+    text-align: center;
+}
+
 @media screen and (max-width: 320px){
     .main{
         width: calc(100% - 50px);
-        margin-left: 50px;
+        padding-left: 50px;
     } 
 }
 
@@ -416,7 +454,7 @@ li .icon-text{
     background-color: var(--spotify-toolbar);
     position: fixed;
     bottom: 0;
-    height: 70px;
+    height: 60px;
     width: 100%;
 }
 
