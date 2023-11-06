@@ -145,7 +145,7 @@
             <h3>
                 Recently played
             </h3>
-            <div class="row d-flex justify-start gap-12">
+            <div class="row d-flex justify-start gap-12 flex-wrap">
                 <div class="card">
                     <img src="./assets/img/metal_lifting.jpg" alt="heavy metal albums">
                     <div class="playlist-name">
@@ -210,7 +210,7 @@
             <div class="subtitle-suggestions">
                 Più ascolti, più accurati saranno i suggerimenti.
             </div>
-            <div class="row d-flex justify-start gap-12">
+            <div class="row d-flex justify-start gap-12 flex-wrap">
                 <div class="card">
                     <img src="./assets/img/radar.jpeg" alt="release radar playlist cover">
                     <div class="playlist-name">
@@ -234,7 +234,7 @@
             <div class="subtitle-suggestions">
                 Più ascolti, più accurati saranno i suggerimenti.
             </div>
-            <div class="row d-flex justify-start gap-12">
+            <div class="row d-flex justify-start gap-12 flex-wrap">
                 <div class="round-card">
                     <img src="./assets/img/youg.jpeg" alt="Lana del Rey cover">
                     <div class="playlist-name">
@@ -253,8 +253,77 @@
     
     </div>
 
-    <div class="toolbar">
+    <div class="toolbar d-flex justify-space-between">
+        <div class="toolbar-left d-flex">
+            <div class="song-playing d-flex">
+                <div class="song-cover">
+                    <img src="./assets/img/sinister.jpeg" alt="cover sinister">
+                </div>
+                <div class="song-info">
+                    <div class="song-title">
+                        Sinister
+                    </div>
+                    <a href="#">
+                        <div class="song-author">
+                        Brano Nome
+                        </div>
+                    </a>
+                </div>
+            </div>
+                
+            <div class="icons d-flex gap-3">
+                <div class="favorite-icon">
+                    <i class="fa-regular fa-heart fa-xs" style="color: #676767;"></i>
+                </div>
+                <div class="album-icon">
+                    <i class="fa-regular fa-folder fa-xs" style="color: #676767;"></i>
+                </div>
+            </div>
+        </div>
+        <!-- /left toolbar -->
 
+        <div class="toolbar-center d-flex align-items-center flex-direction-column gap-2">
+            <div class="player d-flex gap-3">
+                <a href="#"><i class="fa-solid fa-shuffle fa-xs" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-solid fa-backward-step fa-xs" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-regular fa-circle-play fa-lg" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-solid fa-forward-step fa-xs" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-solid fa-rotate-right fa-xs" style="color: #ffffff;"></i></a>
+            </div>
+            <div class="song-progress d-flex justify-space-between align-items-center">
+                <div class="present-time">
+                    0:25
+                </div>
+                <a href="#">
+                    <div class="full-bar">
+                        <div class="progress-bar"></div>
+                    </div>
+                </a>
+                <div class="total-lenght">
+                    4:35
+                </div>
+            </div>
+        </div>
+        <!-- /center toolbar -->
+
+        <div class="toolbar-right d-flex align-items-center gap-3 justify-end">
+            <a href="#">
+                <i class="fa-solid fa-list fa-xs" style="color: #ffffff;"></i>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-display fa-xs" style="color: #ffffff;"></i>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-volume-high fa-xs" style="color: #ffffff;"></i>
+            </a>
+            <a href="#">
+                <div class="volume-full-bar">
+                    <div class="volume-progress-bar">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- /right toolbar -->
     </div>
 
 </body>
