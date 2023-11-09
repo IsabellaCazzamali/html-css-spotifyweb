@@ -44,12 +44,20 @@ a{
     align-items: center;
 }
 
+.align-start{
+    align-items: start;
+}
+
 .justify-content-center{
     justify-content: center;
 }
 
 .justify-start{
     justify-content: start;
+}
+
+.justify-space-around{
+    justify-content: space-around;
 }
 
 .justify-end{
@@ -309,13 +317,14 @@ li .icon-text{
 .main{
     background-color: var(--spotify-primary);
     padding-left: 150px;
+    min-width: 320px;
 /*     margin-bottom: 100px;
     width: calc(100% - 150px);
     height: calc(100vh - 70px); */
 }
 
 .created-for{
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .popular-artists{
@@ -331,10 +340,11 @@ li .icon-text{
 }
 
 .card{
-    width: 150px;
+    width: 11%;
     aspect-ratio: 1 / 1;
     padding-top: 10px;
-    margin-left: 15px;
+    margin: 0 2%;
+    min-width: 100px;
 }
 
 .card .playlist-name{
