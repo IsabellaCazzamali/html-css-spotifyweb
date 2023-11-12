@@ -18,87 +18,88 @@
 
     <div class="sidebar d-flex flex-direction-column">
         <div class="logo">
-            <img src="./assets/img/logo.svg" alt="logo Spotify">
+            <img src="./assets/img/logo.svg" alt="Spotify logo">
         </div>
         <div class="menu">
             <ul>
-                <li class="icon d-flex">
-                    <div class="green-line-y"></div>
-                    <div class="icon-img home">
-                        <img src="./assets/img/home.svg" alt="home icon">
-                    </div>
-                    <div class="icon-text">
-                        Home
-                    </div>
+                <li class="home m-icon">
+                    <a href="#" class="d-flex align-items-center gap-1">
+                        <img src="./assets/img/home.svg" alt="Home icon">
+                        <div class="icon-text">
+                            Home
+                        </div>
+                    </a>
                 </li>
-                <li class="d-flex">
-                    <div class="icon search">
-                        <img src="./assets/img/search.svg" alt="search icon">
-                    </div>
-                    <div class="icon-text">
-                        Cerca
-                    </div>
+                <li class="search m-icon">
+                    <a href="#" class="d-flex align-items-center gap-1">
+                        <img src="./assets/img/search.svg" alt="Search icon">
+                        <div class="icon-text">
+                            Cerca
+                        </div>
+                    </a>
                 </li>
-                <li class="d-flex">
-                    <div class="icon library">
-                        <img src="./assets/img/libreria.svg" alt="library icon">
-                    </div>
-                    <div class="icon-text">
-                        La tua libreria
-                    </div>
+                <li class="search m-icon">
+                    <a href="#" class="d-flex align-items-center gap-1">
+                        <img src="./assets/img/libreria.svg" alt="Search icon">
+                        <div class="icon-text">
+                            La tua libreria
+                        </div>
+                    </a>
                 </li>
             </ul>
         </div>
-        <div class="playlists">
+
+        <div class="playlists-menu">
             <h5>
                 Playlist
             </h5>
-            <ul>
-                <li class="create-playlist d-flex align-items-center">
-                    <i class="fa-sharp fa-solid fa-square-plus fa-2xl" style="color: #a3a3a3;"></i>
+            <div class="create-playlist">
+                <a href="#" class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-square-plus fa-xl" style="color: #a3a3a3;"></i>
                     <div class="create-playlist-text">Crea Playlist</div>
-                </li>
-                <li class="playlist">
-                    Nome Playlist
-                </li>
-                <li class="playlist">
-                    Nome Playlist
-                </li>
-                <li class="playlist">
-                    Nome Playlist
-                </li>
-                <li class="playlist">
-                    Nome Playlist
-                </li>
-                <li class="playlist">
-                    Nome Playlist
-                </li>
-                <li class="playlist">
-                    Nome Playlist
-                </li>
-                <li class="playlist">
-                    Nome Playlist
-                </li>
-                <li class="playlist">
-                    Nome Playlist
-                </li>
-            </ul>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#" class="playlist">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#" class="playlist">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#" class="playlist">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#" class="playlist">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#" class="playlist">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#" class="playlist">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#" class="playlist">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#" class="playlist">Nome Playlist</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="bottom-sidebar-container">
-            <div class="bottom-sidebar d-flex flex-direction-column">
-                <div class="install d-flex align-items-center">
-                    <img src="./assets/img/download.svg" alt="donwload symbol">
-                    <div class="install-text">
+
+        <div class="functions-menu">
+            <div class="install d-flex align-items-center">
+                <img src="./assets/img/download.svg" alt="donwload symbol">
+                <div class="install-text">
                         Installa app
-                    </div>
                 </div>
-                <div class="profile d-flex align-items-center">
-                    <div class="profile-icon">
-                        <img src="./assets/img/profile.svg" alt="Profile icon">
-                    </div>
-                    <div class="profile-text">
-                        John Doe
-                    </div>
+            </div>
+            <div class="user d-flex align-items-center">
+                <div class="user-icon">
+                    <img src="./assets/img/profile.svg" alt="Profile icon">
+                </div>
+                <div class="username">
+                    John Doe
                 </div>
             </div>
         </div>
@@ -255,7 +256,7 @@
 
     <div class="toolbar d-flex justify-space-between">
         <div class="toolbar-left d-flex">
-            <div class="song-playing d-flex">
+            <div class="song-playing d-flex align-items-center">
                 <div class="song-cover">
                     <img src="./assets/img/sinister.jpeg" alt="cover sinister">
                 </div>
