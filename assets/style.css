@@ -137,24 +137,23 @@ a{
 /* #region Sidebar */
 
 .sidebar{
+    width: 50px;
     background-color: var(--spotify-black);
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 35px;
     height: calc(100vh - 60px);
-    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-.sidebar .logo{
-    width: 20px;
-    margin: 0.25rem 0.5rem;
+.logo{
+    width: 25px;
+    height: 25px;
+    margin: 0.5rem 0.75rem;
     background-image: url("./img/logo-small.svg");
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
-.sidebar .logo img{
+.logo img{
     visibility: hidden;
 }
 
@@ -570,6 +569,16 @@ section .subtitle-suggestions{
 @media screen and (min-width: 480px){
     .sidebar{
         width: 150px;
+    }
+
+    .logo{
+        background-image: none;
+        width: 100px;
+        margin-bottom: 1rem;
+    }
+
+    .logo img{
+        visibility: visible;
     }
 
     .main{
